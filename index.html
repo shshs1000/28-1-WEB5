@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="header">
+        <div class="contain">
+            <img src="logo.png" alt="Логотип" class="logo">
+            <nav id="nav">
+                <ul>
+                    <li><a href="#link1">Главная</a></li>
+                    <li><a href="#link2">О нас</a></li>
+                    <li><a href="#link3">Контакты</a></li>
+                    <li><a href="#link4">Поддержка</a></li>
+                </ul>
+            </nav>
+            <h1>Once upon a time in Hollywood</h1>
+        </div>
+    </header>
+
+    <div class="container">
+    <h1>Калькулятор стоимости товара</h1>
+
+    <div class="product">
+        <span>Брелок ($10): </span>
+        <div class="quantity-controls">
+            <button onclick="decreaseQuantity('product1')">-</button>
+            <span id="product1">0</span>
+            <button onclick="increaseQuantity('product1')">+</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <span>Открытка ($20): </span>
+        <div class="quantity-controls">
+            <button onclick="decreaseQuantity('product2')">-</button>
+            <span id="product2">0</span>
+            <button onclick="increaseQuantity('product2')">+</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <span>Плакат 40х50 ($30): </span>
+        <div class="quantity-controls">
+            <button onclick="decreaseQuantity('product3')">-</button>
+            <span id="product3">0</span>
+            <button onclick="increaseQuantity('product3')">+</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <span>Плакат 50х50 ($40): </span>
+        <div class="quantity-controls">
+            <button onclick="decreaseQuantity('product4')">-</button>
+            <span id="product4">0</span>
+            <button onclick="increaseQuantity('product4')">+</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <span>Плакат 50х60 ($50): </span>
+        <div class="quantity-controls">
+            <button onclick="decreaseQuantity('product5')">-</button>
+            <span id="product5">0</span>
+            <button onclick="increaseQuantity('product5')">+</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <span>Футболка ($60): </span>
+        <div class="quantity-controls">
+            <button onclick="decreaseQuantity('product6')">-</button>
+            <span id="product6">0</span>
+            <button onclick="increaseQuantity('product6')">+</button>
+        </div>
+    </div>
+
+    <div class="product">
+      <span>Худи ($70): </span>
+        <div class="quantity-controls">
+            <button onclick="decreaseQuantity('product7')">-</button>
+            <span id="product7">0</span>
+            <button onclick="increaseQuantity('product7')">+</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <span>Свитшот ($80): </span>
+        <div class="quantity-controls">
+            <button onclick="decreaseQuantity('product8')">-</button>
+            <span id="product8">0</span>
+            <button onclick="increaseQuantity('product8')">+</button>
+        </div>
+    </div>
+
+        <button id="calculate" onclick="calculateTotal()">Рассчитать стоимость</button>
+
+        <h2>Итоговая стоимость: $<span id="total">0</span></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
